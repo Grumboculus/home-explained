@@ -1,7 +1,7 @@
 # The Home Explained project
 <h3>Created by Grumbo</h3>
 
-![NPM Version](https://img.shields.io/npm/v/react) ![NPM Version](https://img.shields.io/npm/v/radix-ui)
+![NPM Version](https://img.shields.io/npm/v/react?logo=react) ![NPM Version](https://img.shields.io/npm/v/radix-ui?logo=radixui)
 <br></br>
 
 <p>Home Explained is a project orientated towards teaching users about our world.
