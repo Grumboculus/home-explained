@@ -1,7 +1,8 @@
 # The Home Explained project
-<p>Created by Grumbo</p>
-<br></br>
+<h3>Created by Grumbo</h3>
 
+![NPM Version](https://img.shields.io/npm/v/react)
+<br></br>
 
 <p>Home Explained is a project orientated towards teaching users about our world.
 It includes things such as <b> English, math, science, geography, and history.</b> The project allows users to learn these topics via fun interactive games.
