@@ -1,5 +1,5 @@
 # The Home Explained project
-<h3>Created by Grumbo</h3>
+## Created by Grumbo
 
 ![NPM Version](https://img.shields.io/npm/v/react?logo=react) ![NPM Version](https://img.shields.io/npm/v/radix-ui?logo=radixui)
 <br></br>
