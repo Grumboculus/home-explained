@@ -12,7 +12,7 @@ Users are allowed to learn not only through interactive games but also through a
 
 Home Explained is directed towards classrooms, homeschooling, or extracurricular activities! The project is free for those doing homeschooling and put at a cheap price for schools.</p>
 
-## Installation Process 🚀
+## Set-up Process 🚀
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
