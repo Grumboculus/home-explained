@@ -21,18 +21,8 @@ export default function Home() {
             <Button className="flex-auto" variant="solid" color="gray" size="4" radius="large" >
               Get Started
             </Button>
-          <br></br>
           </Flex>
-          <Container>
-            <Flex className="" align="center" justify="center" gap="3">
-              <Button color="slate" variant="soft" size="3" radius="large">
-                Sign-in
-              </Button>
-              <Button variant="solid" color="indigo" size="3" radius="large">
-                Sign-up
-              </Button>
-            </Flex>
-          </Container>
+          <br></br>
         </Container>
       </main>
     </div>
