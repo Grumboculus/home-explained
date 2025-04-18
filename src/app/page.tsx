@@ -1,31 +1,21 @@
+// components/HeroSection.tsx
 import { Container, Flex, Button } from "@radix-ui/themes";
 
-
-export default function Home() {
+export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <main>
-        <Container size="2" className="bg-black min-h-screen flex flex-col items-top justify-top p-4">
-          <br></br>
-          <br></br>
-          <Flex direction={"column"} align="center" justify="center" gap="2">
-            <h1 className="text-4xl flex-auto font-bold maximumimpact text-gray-500">Welcome to Home Explained!</h1>
-            <p className="text-1xl flex-auto text-gray-500" align="center">Home Explained is a project orientated towards teaching users about our world.
-                It includes <b> english, math, science, geography, and history.</b> 
-                The project allows users to learn these topics via fun interactive games.
-                Users are allowed to learn not only through interactive games but also through articles, videos, and books.</p>
-          </Flex>
-      <br></br>
-      <br></br>
-          <Flex direction={"column"} align="center" justify="center" gap="2">
-            <Button className="flex-auto" variant="solid" color="gray" size="4" radius="large" >
-              Get Started
-            </Button>
-          </Flex>
-          <br></br>
-        </Container>
-      </main>
-    </div>
-  );
+    <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 text-center relative overflow-hidden">
+      <div className="absolute inset-0 -z-10" />
+      
+      <h1 className="text-125xl md:text-6xl font-serif mb-4 tracking-wide">
+        World Explained
+      </h1>
+      <p className="max-w-xl text-gray-300 mb-8">
+        Teaching the future generations about the world we live in, one step at a time.
+      </p>
+      <div className="flex gap-4">
+        <Button variant="outline" size="3" radius="large">Sign In</Button>
+        <Button color="blue" radius="large" size="3">Getting Started</Button>
+      </div>
+    </section>
+  )
 }
-
