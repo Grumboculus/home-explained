@@ -1,11 +1,11 @@
 import { Container, Flex, Button } from "@radix-ui/themes";
 
-export default function HeroSection() {
+export default function SignUp() {
   return (
     <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 text-center relative overflow-hidden">
       <div className="absolute inset-0 -z-10" />
       
-      <h1 className="text-6xl md:text-6xl font-serif mb-4 tracking-wide">
+      <h1 className="text-5xl md:text-6xl font-serif mb-4 tracking-wide">
         World Explained
       </h1>
       <p className="max-w-xl text-gray-300 mb-8">
