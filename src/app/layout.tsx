@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
+import '@radix-ui/themes/styles.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,10 +36,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Theme>
-          {/* <Header /> */}
           {children}
-      </Theme>
-        {children}
+        </Theme>
       </body>
     </html>
   );
