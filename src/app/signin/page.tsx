@@ -1,9 +1,9 @@
-import { Button, Text, Heading, Container, Link } from "@radix-ui/themes";
+import { Button, Text, Container, Link, Separator, IconButton } from "@radix-ui/themes";
 
 export default function SignIn() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0c0c12] px-4">
-    <div className="bg-gradient-to-br from-[#232323] to-[#00000] p-8 rounded-xl shadow-lg w-full max-w-md border border-[#2e3a5b]">
+    <div className="bg-gradient-to-br from-[#232323] to-[#00000] min-h-screen flex items-center justify-center bg-[#0c0c12] px-4">
+    <div style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }} className="p-8 rounded-xl shadow-lg w-full max-w-md border border-[#2e3a5b] z-0">
       <h2 className="text-2xl font-semibold text-white mb-6">Sign in</h2>
 
       <form className="space-y-5">
@@ -30,18 +30,26 @@ export default function SignIn() {
           />
         </div>
         <Container>
-          <div className="flex justify-center">
+          <div className="flex items-center justify-center gap-4">
             <Link>
               <Button className="h-12 px-4 justify-center text-color-[#686868]" size="3" variant="solid">
                 Sign-In
               </Button>
             </Link>
-          </div>
-          <br></br>
-          <div className="flex justify"></div>
-          <Text className="justify-center h-12" size="1" color="blue">Don't have an account? Register one today!</Text>
-          <Link href="/signup" color="blue" size="1"> SIGN UP </Link>
 
+            <Separator className="justify-center" orientation="vertical" color="indigo" size="2"></Separator>
+
+            <IconButton className="justify-center" radius="full" variant="outline" size="3">
+              <Link>
+                <img src="/googletrans(1).png" alt="Google Logo" className="" />
+              </Link>
+            </IconButton>
+          </div>
+
+          <br></br>
+          <div className="flex justify-center">
+            <Text className="justify-center" size="1" color="blue">Don't have an account? Register one today!  <Link href="/signup" className="underline" color="blue" size="1"> <u>SIGN UP</u> </Link> </Text>
+          </div>     
         </Container>
       </form>
     </div>
