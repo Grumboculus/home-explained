@@ -1,4 +1,11 @@
-import { Button, Text, Container, Link, Separator, IconButton } from "@radix-ui/themes";
+import { 
+Button, 
+Text, 
+Container, 
+Link, 
+Separator, 
+IconButton 
+} from "@radix-ui/themes";
 
 export default function SignIn() {
   return (
@@ -31,7 +38,7 @@ export default function SignIn() {
         </div>
         <Container>
           <div className="flex items-center justify-center gap-4">
-            <Link>
+            <Link href="/dashboard">
               <Button className="h-12 px-4 justify-center text-color-[#686868]" size="3" variant="solid">
                 Sign-In
               </Button>
