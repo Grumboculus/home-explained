@@ -12,6 +12,12 @@ Users are allowed to learn not only through interactive games but also through a
 
 Home Explained is directed towards classrooms, homeschooling, or extracurricular activities! The project is free for those doing homeschooling and put at a cheap price for schools.</p>
 
+## Current Team
+
+<p> Currently it's only developed by me, Grumbo!
+This also makes the progress very slow because I have to do everything myself!
+If you like the project, please leave me some feedback in my <b>email or discord</b>!<p>
+
 ## Set-up Process 🚀
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
