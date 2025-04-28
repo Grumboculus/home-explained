@@ -2,7 +2,8 @@ import {
     Link, 
     Separator,  
     Flex,
-    Avatar
+    Avatar,
+    Badge
 } from "@radix-ui/themes";
     
 const JourneyCard = ({ title, time, img, link }) => {
@@ -87,13 +88,11 @@ const CreatorCard = ({ CRtitle, CRavatar, CRprofileLink, UserName }) => {
   return (
     <div className="flex items-center hover:cursor-pointer bg-white/10 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-gray-700 p-2">
       {/* Avatar */}
-      <Avatar>
-        <img 
-          src={CRavatar} 
-          alt={CRtitle} 
-          className="w-12 h-12 rounded-full object-cover" 
-        />
-      </Avatar>
+      <Avatar
+        src={CRavatar} 
+        alt={CRtitle} 
+        className="w-12 h-12 rounded-full object-cover"
+      />
 
       {/* Display name */}
       <div className="ml-4">
@@ -130,7 +129,7 @@ export default function Dashboard() {
             </p>
             <Separator color="gray" size="2" orientation="vertical" />
             <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
-            <a href="#">Journies</a>
+            <a href="#">Journeys</a>
             </p>
             <Separator color="gray" size="2" orientation="vertical" />
             <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
@@ -155,7 +154,7 @@ export default function Dashboard() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
               {/* Cards */}
-              <CreatorCard CRtitle="Creator 1" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
+              <CreatorCard CRtitle="Grumbo" CRavatar="/DashboardIMGS/Creators/GrumboPlain.png" CRprofileLink="#" UserName="grumbo" />
               <CreatorCard CRtitle="Creator 2" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
               <CreatorCard CRtitle="Creator 3" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
             </div>
@@ -176,21 +175,19 @@ export default function Dashboard() {
             <br />
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4">Reccomended</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
                   <SmallJourneyCard stitle="Reccomended 1" stime="6" simg="/PlaceholderIMG.png" slink="#" />
                   <SmallJourneyCard stitle="Reccomended 2" stime="2" simg="/PlaceholderIMG.png" slink="#" />
-                  <SmallJourneyCard stitle="Reccomended 3" stime="3" simg="/PlaceholderIMG.png" slink="#" />
                 </div>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4">Trending</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
                   <SmallJourneyCard stitle="Trending 1" stime="6" simg="/PlaceholderIMG.png" slink="#" />
                   <SmallJourneyCard stitle="Trending 2" stime="2" simg="/PlaceholderIMG.png" slink="#" />
-                  <SmallJourneyCard stitle="Trending 3" stime="3" simg="/PlaceholderIMG.png" slink="#" />
               </div>
               </div>
             </div>
@@ -203,54 +200,65 @@ export default function Dashboard() {
               <br />
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4">Reccomended</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
                   <VideoJourneyCard VItitle="Reccomended 1" VItime="6" VIimg="/PlaceholderIMG.png" VIlink="#" />
                   <VideoJourneyCard VItitle="Reccomended 2" VItime="2" VIimg="/PlaceholderIMG.png" VIlink="#" />
-                  <VideoJourneyCard VItitle="Reccomended 3" VItime="3" VIimg="/PlaceholderIMG.png" VIlink="#" />
                 </div>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4">Trending</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
                   <VideoJourneyCard VItitle="Trending 1" VItime="6" VIimg="/PlaceholderIMG.png" VIlink="#" />
                   <VideoJourneyCard VItitle="Trending 2" VItime="2" VIimg="/PlaceholderIMG.png" VIlink="#" />
-                  <VideoJourneyCard VItitle="Trending 3" VItime="3" VIimg="/PlaceholderIMG.png" VIlink="#" />
               </div>
               </div>
             </div>
           </div>
 
           {/* Bottom Card */}
-          <div className="flex-[1] bg-black/30 rounded-lg p-4 backdrop-blur-md">
+          <div className="flex-[1] bg-black/30 rounded-lg p-4 backdrop-blur-md gap-4 justify-between overflow-hidden">
             <h4 className="text-lg font-semibold">Profile</h4>
             <p className="text-gray-400 text-sm">Customize your profile!</p>
 
-            <div>
-              <div className="flex items-center mt-4 bg-black/20 p-4 rounded-lg">
-                <Avatar>
-                  <img 
-                    src="/PlaceholderIMG.png" 
-                    alt="Profile Avatar" 
-                    className="w-16 h-16 rounded-full object-cover" 
-                  />
-                </Avatar>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold">Your Name</h3>
-                  <p className="text-gray-400 text-sm">Your Bio</p>
+            <div className="flex flex-row justify-center items-center mt-4">
+              <div className="flex items-center mt-4 bg-black/20 p-4 rounded-lg w-1/2 mb-4 gap-1">
+              <Avatar
+        src="/DashboardIMGS/Creators/GrumboPlain.png"
+        alt="Grumbo"
+        className="w-16 h-16 rounded-full object-cover"
+      />
+                <div className="ml-4 ml-4 flex-1 min-w-0">
+                  <h3 className="text-lg font-semibold">Grumbo</h3>
+                  <p className="text-gray-400 text-xs truncate overflow-hidden">Founder of Home-Explained! Thank you so much for using my app!</p> 
                 </div>
+
+                <Badge color="yellow" size="1" variant="solid" className="text-xs font-semibold">Founder</Badge>
+
               </div>
+
+              <div className="flex items-center mt-4 mg-4 p-4 mb-4 gap-4">
+                  <Link href="/dashboard">
+                    <button className="px-4 text-white py-2 rounded-md bg-white/10 hover:bg-white/20 hover:cursor-pointer transition text-xs">Edit Profile</button>
+                  </Link>
+
+                  <Link href="/dashboard">
+                    <button className="px-4 text-white py-2 rounded-md bg-white/10 hover:bg-white/20 hover:cursor-pointer transition text-xs">Account Settings</button>
+                  </Link>
+
+              </div>
+
             </div>
           </div>
         </div>
 
         <div className="w-full lg:w-1/2 bg-black/20 rounded-lg p-6 backdrop-blur-md flex flex-col justify-between">
 
-        {/* Top content */}
+        {/* Right Side */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Journies</h2>
+          <h2 className="text-3xl font-bold mb-4">Journeys</h2>
           <p className="text-gray-400 mb-8">Take the journey to learn a new skill.</p>
 
           {/* Trending Section */}
