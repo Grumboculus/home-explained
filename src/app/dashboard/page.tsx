@@ -52,7 +52,7 @@ const SmallJourneyCard = ({ stitle, stime, simg, slink }) => {
             href={slink} 
           />
         </h3>
-        <p className="text-xs">{stime}H🕝</p>
+        <p className="text-xs">{stime}🕝</p>
       </div>
     </div>
   );
@@ -78,7 +78,7 @@ const VideoJourneyCard = ({ VItitle, VItime, VIimg, VIlink }) => {
             href={VIlink} 
           />
         </h3>
-        <p className="text-xs">{VItime}H🕝</p>
+        <p className="text-xs">{VItime}🕝</p>
       </div>
     </div>
   );
@@ -148,15 +148,15 @@ export default function Dashboard() {
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
       
           {/* Top Card */}
-          <div className="flex-[1] bg-black/30 rounded-lg p-4 backdrop-blur-md">
+          <div className="flex-[1] justify-between bg-black/30 rounded-lg p-4 backdrop-blur-md">
             <h2 className="text-xl font-bold mb-2">Creators</h2>
             <p className="text-gray-300">Our favorite teachers and creators!</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
               {/* Cards */}
-              <CreatorCard CRtitle="Grumbo" CRavatar="/DashboardIMGS/Creators/GrumboPlain.png" CRprofileLink="#" UserName="grumbo" />
-              <CreatorCard CRtitle="Creator 2" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
-              <CreatorCard CRtitle="Creator 3" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
+              <CreatorCard CRtitle="Grumbo" CRavatar="/DashboardIMGS/Creators/GrumboPlain.png" CRprofileLink="/users/1" UserName="grumbo" />
+              <CreatorCard CRtitle="Aurora Lane" CRavatar="/DashboardIMGS/Creators/Aurora.png" CRprofileLink="#" UserName="aurora.codes" />
+              <CreatorCard CRtitle="Maxx" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="maxxybuilding" />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
@@ -177,8 +177,8 @@ export default function Dashboard() {
                 <h3 className="text-2xl font-semibold mb-4">Reccomended</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
-                  <SmallJourneyCard stitle="Reccomended 1" stime="6" simg="/PlaceholderIMG.png" slink="#" />
-                  <SmallJourneyCard stitle="Reccomended 2" stime="2" simg="/PlaceholderIMG.png" slink="#" />
+                  <SmallJourneyCard stitle="Reccomended 1" stime="6M" simg="/PlaceholderIMG.png" slink="#" />
+                  <SmallJourneyCard stitle="Reccomended 2" stime="2M" simg="/PlaceholderIMG.png" slink="#" />
                 </div>
               </div>
 
@@ -186,8 +186,8 @@ export default function Dashboard() {
                 <h3 className="text-2xl font-semibold mb-4">Trending</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
-                  <SmallJourneyCard stitle="Trending 1" stime="6" simg="/PlaceholderIMG.png" slink="#" />
-                  <SmallJourneyCard stitle="Trending 2" stime="2" simg="/PlaceholderIMG.png" slink="#" />
+                  <SmallJourneyCard stitle="Trending 1" stime="5M" simg="/PlaceholderIMG.png" slink="#" />
+                  <SmallJourneyCard stitle="Trending 2" stime="10M" simg="/PlaceholderIMG.png" slink="#" />
               </div>
               </div>
             </div>
@@ -202,8 +202,8 @@ export default function Dashboard() {
                 <h3 className="text-2xl font-semibold mb-4">Reccomended</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
-                  <VideoJourneyCard VItitle="Reccomended 1" VItime="6" VIimg="/PlaceholderIMG.png" VIlink="#" />
-                  <VideoJourneyCard VItitle="Reccomended 2" VItime="2" VIimg="/PlaceholderIMG.png" VIlink="#" />
+                  <VideoJourneyCard VItitle="Reccomended 1" VItime="30M" VIimg="/PlaceholderIMG.png" VIlink="#" />
+                  <VideoJourneyCard VItitle="Reccomended 2" VItime="1H" VIimg="/PlaceholderIMG.png" VIlink="#" />
                 </div>
               </div>
 
@@ -211,8 +211,8 @@ export default function Dashboard() {
                 <h3 className="text-2xl font-semibold mb-4">Trending</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
-                  <VideoJourneyCard VItitle="Trending 1" VItime="6" VIimg="/PlaceholderIMG.png" VIlink="#" />
-                  <VideoJourneyCard VItitle="Trending 2" VItime="2" VIimg="/PlaceholderIMG.png" VIlink="#" />
+                  <VideoJourneyCard VItitle="Trending 1" VItime="12M" VIimg="/PlaceholderIMG.png" VIlink="#" />
+                  <VideoJourneyCard VItitle="Trending 2" VItime="45M" VIimg="/PlaceholderIMG.png" VIlink="#" />
               </div>
               </div>
             </div>
@@ -226,10 +226,10 @@ export default function Dashboard() {
             <div className="flex flex-row justify-center items-center mt-4">
               <div className="flex items-center mt-4 bg-black/20 p-4 rounded-lg w-1/2 mb-4 gap-1">
               <Avatar
-        src="/DashboardIMGS/Creators/GrumboPlain.png"
-        alt="Grumbo"
-        className="w-16 h-16 rounded-full object-cover"
-      />
+                src="/DashboardIMGS/Creators/GrumboPlain.png"
+                alt="Grumbo"
+                className="w-16 h-16 rounded-full object-cover bg-black/20"
+              />
                 <div className="ml-4 ml-4 flex-1 min-w-0">
                   <h3 className="text-lg font-semibold">Grumbo</h3>
                   <p className="text-gray-400 text-xs truncate overflow-hidden">Founder of Home-Explained! Thank you so much for using my app!</p> 
