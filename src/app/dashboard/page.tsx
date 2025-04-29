@@ -129,7 +129,7 @@ export default function Dashboard() {
             </p>
             <Separator color="gray" size="2" orientation="vertical" />
             <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
-            <a href="#">Journeys</a>
+            <a href="/journeys">Journeys</a>
             </p>
             <Separator color="gray" size="2" orientation="vertical" />
             <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
@@ -155,15 +155,15 @@ export default function Dashboard() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
               {/* Cards */}
               <CreatorCard CRtitle="Grumbo" CRavatar="/DashboardIMGS/Creators/GrumboPlain.png" CRprofileLink="/users/1" UserName="grumbo" />
-              <CreatorCard CRtitle="Aurora Lane" CRavatar="/DashboardIMGS/Creators/Aurora.png" CRprofileLink="#" UserName="aurora.codes" />
-              <CreatorCard CRtitle="Maxx" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="maxxybuilding" />
+              <CreatorCard CRtitle="Aurora Lane" CRavatar="/DashboardIMGS/Creators/Aurora.png" CRprofileLink="/users/2" UserName="aurora.codes" />
+              <CreatorCard CRtitle="Maxx" CRavatar="/DashboardIMGS/Creators/MAXImage.png" CRprofileLink="/users/3" UserName="maxxybuilding" />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
               {/* Cards */}
-              <CreatorCard CRtitle="Creator 1" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
-              <CreatorCard CRtitle="Creator 2" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
-              <CreatorCard CRtitle="Creator 3" CRavatar="/PlaceholderIMG.png" CRprofileLink="#" UserName="Creator" />
+              <CreatorCard CRtitle="WCarterW" CRavatar="/DashboardIMGS/Creators/Crown.png" CRprofileLink="/users/4" UserName="carterMRW" />
+              <CreatorCard CRtitle="MRS.Hart" CRavatar="/DashboardIMGS/Creators/MUSIC.png" CRprofileLink="/users/5" UserName="mrs.hart" />
+              <CreatorCard CRtitle="LeoL" CRavatar="/DashboardIMGS/Creators/LBOX.png" CRprofileLink="/users/6" UserName="LeoisanL" />
             </div>
           </div>
 
@@ -171,14 +171,14 @@ export default function Dashboard() {
           <div className="flex flex-[2.5] gap-4">
             <div className="flex-1 bg-black/30 rounded-lg p-4 backdrop-blur-md">
               <h3 className="text-lg font-semibold">Articles</h3>
-              <p className="text-gray-400 text-xs">Check out Articles relating to topics you might like!</p>
+              <p className="text-gray-400 text-xs">Articles you might like!</p>
             <br />
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">Reccomended</h3>
+                <h3 className="text-2xl font-semibold mb-4">Recommended</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
-                  <SmallJourneyCard stitle="Reccomended 1" stime="6M" simg="/PlaceholderIMG.png" slink="#" />
-                  <SmallJourneyCard stitle="Reccomended 2" stime="2M" simg="/PlaceholderIMG.png" slink="#" />
+                  <SmallJourneyCard stitle="Recommended 1" stime="6M" simg="/PlaceholderIMG.png" slink="#" />
+                  <SmallJourneyCard stitle="Recommended 2" stime="2M" simg="/PlaceholderIMG.png" slink="#" />
                 </div>
               </div>
 
@@ -195,15 +195,15 @@ export default function Dashboard() {
 
             <div className="flex-1 bg-black/30 rounded-lg p-4 backdrop-blur-md">
                 <h3 className="text-lg font-semibold">Videos</h3>
-              <p className="text-gray-400 text-xs">Check out videos relating to topics you might like!</p>
+              <p className="text-gray-400 text-xs">Videos you might like!</p>
 
               <br />
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">Reccomended</h3>
+                <h3 className="text-2xl font-semibold mb-4">Recommended</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
-                  <VideoJourneyCard VItitle="Reccomended 1" VItime="30M" VIimg="/PlaceholderIMG.png" VIlink="#" />
-                  <VideoJourneyCard VItitle="Reccomended 2" VItime="1H" VIimg="/PlaceholderIMG.png" VIlink="#" />
+                  <VideoJourneyCard VItitle="Recommended 1" VItime="30M" VIimg="/PlaceholderIMG.png" VIlink="#" />
+                  <VideoJourneyCard VItitle="Recommended 2" VItime="1H" VIimg="/PlaceholderIMG.png" VIlink="#" />
                 </div>
               </div>
 

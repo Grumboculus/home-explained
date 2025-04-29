@@ -1,10 +1,31 @@
 @import "tailwindcss";
 @import "@radix-ui/themes/styles.css";
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
 
 /* === Theme Colors === */
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
+}
+
+
+
+/* Custom Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
 /* Optional: Custom Theme Tokens (if used with Radix UI or other CSS vars) */
