@@ -20,6 +20,8 @@ If you like the project, please leave me some feedback in my <b>email or discord
 
 ## Set-up Process 🚀
 
+Note | Use the Development branch for the latest features.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 First, run the development server:
