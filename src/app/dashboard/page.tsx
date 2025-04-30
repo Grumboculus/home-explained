@@ -124,16 +124,16 @@ export default function Dashboard() {
           </Link>
 
           <Flex className="gap-2">
-            <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
-            <a href="/dashboard">Home</a>
+            <p className="bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer inline-block">
+              <a href="/dashboard">Home</a>
             </p>
             <Separator color="gray" size="2" orientation="vertical" />
-            <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
-            <a href="/journeys">Journeys</a>
+            <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer inline-block">
+              <a href="/journeys">Journeys</a>
             </p>
             <Separator color="gray" size="2" orientation="vertical" />
-            <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer inline-block">
-            <a href="#">Schools</a>
+            <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer inline-block">
+              <a href="#">Schools</a>
             </p>
           </Flex>
 

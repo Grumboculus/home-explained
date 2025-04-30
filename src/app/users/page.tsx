@@ -110,8 +110,42 @@ const CreatorCard = ({ CRtitle, CRavatar, CRprofileLink, UserName }) => {
 
 export default function Dashboard() {
   return (
-    <div className="bg-gradient-to-br from-[#232323] to-[#00000] min-h-screen bg-[#0c0c12] text-white">
-      
+    <div className="bg-gradient-to-br from-[#3d3d3d] to-[#000000] min-h-screen bg-[#0c0c12] text-white flex flex-col">
+
+            {/* Navbar */}
+            <div className="py-2 bg-black/15 backdrop-blur-md">
+                <div className="flex items-center justify-between px-6">
+
+                    <Link href="/">
+                        <img 
+                            src="/HomeExplainedLogo.png" 
+                            alt="Logo" 
+                            className="bg-white/10 h-10 w-auto rounded-full px-1 py-1 hover:cursor-pointer" 
+                        />
+                    </Link>
+
+                    <div className="flex items-center gap-2">
+                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer">
+                            <a href="/dashboard">Home</a>
+                        </p>
+                        <Separator color="gray" size="2" orientation="vertical" />
+                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer">
+                            <a href="/journeys">Journeys</a>
+                        </p>
+                        <Separator color="gray" size="2" orientation="vertical" />
+                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer">
+                            <a href="#">Schools</a>
+                        </p>
+                    </div>
+
+                    <div className="w-10" />
+                </div>
+            </div>
+
+            <div className="flex justify-center items-center min-h-screen grid grid-rows-2">
+              <h1 className="text-3xl font-bold text-center mb-4">Yes, this was going to be a page. But it was scrapped. 😭</h1>
+              <p className="text-lg text-center mb-4">Sorry.</p>
+            </div>
     </div>
   )
 }

@@ -56,15 +56,15 @@ export default function Dashboard() {
                     </Link>
 
                     <div className="flex items-center gap-2">
-                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer">
+                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer">
                             <a href="/dashboard">Home</a>
                         </p>
                         <Separator color="gray" size="2" orientation="vertical" />
-                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer">
+                        <p className="bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer">
                             <a href="/journeys">Journeys</a>
                         </p>
                         <Separator color="gray" size="2" orientation="vertical" />
-                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:underline hover:cursor-pointer">
+                        <p className="hover:bg-gray-600 transition-colors duration-300 px-3 py-2 rounded-full hover:cursor-pointer">
                             <a href="#">Schools</a>
                         </p>
                     </div>
@@ -98,11 +98,13 @@ export default function Dashboard() {
                     {/* Trending */}
                     <div className="flex flex-col gap-4 mx-4 my-4 p-4 bg-black/20 fade-in-up rounded-lg shadow-md">
                         <h2 className="text-2xl font-semibold">Trending</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                            <JourneyCard title="Web Development | Libraries" time="6H" img="/Journeys/WebDevPlace.jpg" difficulty="Master" difficultyColor="orange" />
-                            <JourneyCard title="Creative Design" time="4H" img="#" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Business Basics" time="2H" img="#" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Photography Essentials" time="1.5H" img="#" />
+                        <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+                            <JourneyCard title="Web Development | Libraries" time="6H" img="/Journeys/WebDevPlace.jpg" difficulty="Intermediate" difficultyColor="blue" />
+                            <JourneyCard title="Creative Design" time="4H" img="/Journeys/CreativeDesign.png" difficulty="Learning" difficultyColor="orange" />
+                            <JourneyCard title="Business Basics" time="2H" img="/Journeys/Business.jpg" difficulty="Starter" difficultyColor="green" />
+                            <JourneyCard title="Photography Essentials" time="1.5H" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />
+                            <JourneyCard title="Marketing Crash Course" time="3H" img="/Journeys/Stonks.png" difficulty="Learning" difficultyColor="orange"/>
+                            <JourneyCard title="Writing" time="12H" img="/Journeys/Writing.jpg" difficulty="Starter" difficultyColor="green"/>
                         </div>
 
                         <div className="flex justify-end items-end">
@@ -113,20 +115,20 @@ export default function Dashboard() {
 
                     </div>
 
-                    {/* Trending */}
+                    {/* Recommended */}
                     <div className="flex flex-col gap-4 mx-4 my-4 p-4 bg-black/20 fade-in-up rounded-lg shadow-md">
                         <h2 className="text-2xl font-semibold">Recommended</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                            <JourneyCard title="Art Fundamentals" time="1H" img="#" />
-                            <JourneyCard title="Public Speaking" time="30M" img="#" />
-                            <JourneyCard title="Animation Basics" time="5H" img="#" />
-                            <JourneyCard title="Marketing Crash Course" time="3H" img="#" />
+                        <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+                            <JourneyCard title="Art Fundamentals" time="1H" img="/Journeys/Art.png" difficulty="Starter" difficultyColor="green" />
+                            <JourneyCard title="Public Speaking | Tone" time="30M" img="/Journeys/PublicSpeaking.png" difficulty="Expert" difficultyColor="red" />
+                            <JourneyCard title="Animation Basics" time="5H" img="/Journeys/Animation.jpg" difficulty="Starter" difficultyColor="green" />
+                            <JourneyCard title="Marketing Crash Course" time="3H" img="/Journeys/Stonks.png" difficulty="Learning" difficultyColor="orange" />
+                            <JourneyCard title="Photography Essentials" time="1.5H" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />
+                            <JourneyCard title="Writing" time="12H" img="/Journeys/Writing.jpg" difficulty="Starter" difficultyColor="green"/>
                         </div>
 
                         <div className="flex justify-end items-end">
-
                             <NumberNavigator></NumberNavigator>
-                            
                         </div> 
                         
                     </div>
