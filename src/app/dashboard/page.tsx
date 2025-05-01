@@ -190,6 +190,13 @@ export default function Dashboard() {
                   <SmallJourneyCard stitle="Trending 2" stime="10M" simg="/PlaceholderIMG.png" slink="#" />
               </div>
               </div>
+
+              <div className="flex justify-center items-center mt-4">
+                <Link href="/articles">
+                  <button className="px-4 text-white py-2 rounded-md bg-white/10 hover:bg-white/20 hover:cursor-pointer transition">View All 👁️</button>
+                </Link>
+              </div>
+
             </div>
 
 
@@ -208,6 +215,7 @@ export default function Dashboard() {
               </div>
 
               <div className="mb-8">
+
                 <h3 className="text-2xl font-semibold mb-4">Trending</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {/* Cards */}
@@ -215,6 +223,13 @@ export default function Dashboard() {
                   <VideoJourneyCard VItitle="Trending 2" VItime="45M" VIimg="/PlaceholderIMG.png" VIlink="#" />
               </div>
               </div>
+
+              <div className="flex justify-center items-center mt-4">
+                <Link href="/videos">
+                  <button className="px-4 text-white py-2 rounded-md bg-white/10 hover:bg-white/20 hover:cursor-pointer transition">View All 👁️</button>
+                </Link>
+              </div>
+
             </div>
           </div>
 
@@ -258,7 +273,9 @@ export default function Dashboard() {
 
         {/* Right Side */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Journeys</h2>
+          <Link href="/journeys">
+            <h2 className="text-3xl font-bold mb-4 hover:cursor-pointer hover:underline text-white">Journeys</h2>
+          </Link>
           <p className="text-gray-400 mb-8">Take the journey to learn a new skill.</p>
 
           {/* Trending Section */}
@@ -300,7 +317,7 @@ export default function Dashboard() {
           <div className="mb-8 justify-between">
             <div className="flex justify-between">
               
-              <Link href="/dashboard">
+              <Link href="/journeys">
                 <button className="px-4 text-white py-2 rounded-md bg-white/10 hover:bg-white/20 hover:cursor-pointer transition">View All 👁️</button>
               </Link>
 

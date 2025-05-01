@@ -73,14 +73,14 @@ const CreatorCard = ({ JTitle, JLogo, JLink}) => {
         </div>
 
         <div className="flex-1 flex justify-center items-start p-4 mx-4 my-4">
-          <div className="bg-black/20 backdrop-blur-md shadow-lg rounded-2xl w-full max-w-screen flex flex-col gap-8 ">
+          <div className="bg-black/20 backdrop-blur-md shadow-lg rounded-2xl w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
 
             <div className="flex flex-col gap-6 px-4 py-8 sm:px-6 md:px-12 lg:px-24">
               {/* Row 1: Top Left (1/4) + Top Right (3/4) */}
               <div className="flex flex-col lg:flex-row gap-6">
                 <div className="w-full lg:w-1/4 bg-black/30 p-4 rounded-2xl shadow-md">
                   <h2 className="text-4xl font-semibold text-center mb-2">Grumbo</h2>
-                  <img src="/GrumboPlain.png" alt="Grumbo" className="rounded-full mx-auto w-50 h-50" />
+                  <img src="/GrumboPlain.png" alt="Grumbo" className="rounded-full mx-auto w-32 h-32 sm:w-40 sm:h-40 object-cover" />
                   <p className="text-sm text-gray-300 text-center">
                     Founder of Home Explained. 
                     A very passionate developer, trying to bring education to the masses for free.</p>
@@ -100,13 +100,13 @@ const CreatorCard = ({ JTitle, JLogo, JLink}) => {
                 <h2 className="text-4xl font-semibold text-center mb-2">User Info</h2>
                 <p className="text-ms text-gray-300 text-center">Check out Grumbo's Activity!</p>
   
-                <div className="grid grid-cols-3 gap-4 mt-4 bg-black/30 p-4 rounded-2xl shadow-md">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 bg-black/30 p-4 rounded-2xl shadow-md">
                   <div className="w-full px-4 bg-gradient-to-br from-[#1d1d1d] to-[#000000] bg-[#0c0c12] p-4 rounded-2xl shadow-md">
                     <div className="flex flex-col justify-center items-center">
                       <h1 className="font-bold text-2xl">User Badges</h1>
                       <p className="text-sm text-gray-300">Show off your prestige with user badges!</p>
                     </div>
-                    <div className="mt-3 flex flex-wrap gap-2 justify-center bg-black/30 border border-gray-600 p-4 grid grid-cols-2 rounded-2xl shadow-md w-full">
+                    <div className="mt-3 grid grid-cols-2 sm:grid-cols-1 gap-2 justify-center bg-black/30 border border-gray-600 p-4 rounded-2xl shadow-md w-full">
                       <Badge radius="full" color="purple">Founder</Badge>
                       <Badge radius="full" color="red">Developer</Badge>
                       <Badge radius="full" color="green">Completionist</Badge>
@@ -139,7 +139,7 @@ const CreatorCard = ({ JTitle, JLogo, JLink}) => {
                       <div className="flex items-end justify-center gap-2 mt-3 bg-black/30 border border-gray-600 p-4 rounded-2xl shadow-md w-full">
                         <ScrollArea scrollbars="vertical" radius="large" style={{ width: "100%", height: "50px" }}>
                           
-                          <div className="grid grid-rows-99 gap-2">
+                          <div className="grid auto-rows-auto gap-2">
                             <CreatorCard JTitle="Web Development | Libraries" JLink="#" JLogo="/Journeys/WebDevPlace.jpg" />
                             <CreatorCard JTitle="Web Development | Libraries" JLink="#" JLogo="/Journeys/WebDevPlace.jpg" />
                           </div>
