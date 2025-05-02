@@ -88,12 +88,12 @@ export default function Articles() {
                     <div className="flex flex-col gap-4 mx-4 my-4 p-4 bg-black/20 fade-in-up rounded-lg shadow-md">
                         <h2 className="text-2xl font-semibold">Trending</h2>
                         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Journeys/WebDevPlace.jpg" timeSince="NASA" />
-                            <JourneyCard title="Elon Musk is bad >:(" readTime="4M" img="/Journeys/CreativeDesign.png" difficulty="Learning" difficultyColor="orange" />
-                            <JourneyCard title="Illuminate Wormhole" readTime="2M" img="/Journeys/Business.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Photography Essential" time="1.5M" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Marketing Crash Course" time="3H" img="/Journeys/Stonks.png" difficulty="Learning" difficultyColor="orange"/>
-                            <JourneyCard title="Writing" time="12H" img="/Journeys/Writing.jpg" difficulty="Starter" difficultyColor="green"/>
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
                         </div>
 
                         <div className="flex justify-end items-end">
@@ -106,12 +106,12 @@ export default function Articles() {
                     <div className="flex flex-col gap-4 mx-4 my-4 p-4 bg-black/20 fade-in-up rounded-lg shadow-md">
                         <h2 className="text-2xl font-semibold">Recommended</h2>
                         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-                            <JourneyCard title="Art Fundamentals" time="1H" img="/Journeys/Art.png" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Public Speaking | Tone" time="30M" img="/Journeys/PublicSpeaking.png" difficulty="Expert" difficultyColor="red" />
-                            <JourneyCard title="Animation Basics" time="5H" img="/Journeys/Animation.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Marketing Crash Course" time="3H" img="/Journeys/Stonks.png" difficulty="Learning" difficultyColor="orange" />
-                            <JourneyCard title="Photography Essentials" time="1.5H" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Writing" time="12H" img="/Journeys/Writing.jpg" difficulty="Starter" difficultyColor="green"/>
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Articles/BrightLights.png" timeSince="NASA" />
                         </div>
 
                         <div className="flex justify-end items-end">

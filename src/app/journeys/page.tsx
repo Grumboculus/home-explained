@@ -95,9 +95,9 @@ export default function Dashboard() {
                             </div>
 
                             <div className="grid grid-rows justify-center items-center gap-2 mt-4 bg-black/20 rounded-lg p-4 shadow-md">
-                            <h1>Our Beginning!</h1>
+                            <h1 className="text-3xl font-bold">Our Beginning!</h1>
                                 <div>
-                                    <JourneyCard title="Universe Explained" />
+                                    <JourneyCard title="Universe Explained" time="24H" img="/Universe1.jpg" difficulty="Starter" difficultyColor="green" />
                                 </div>
                             </div>
                     </div>
