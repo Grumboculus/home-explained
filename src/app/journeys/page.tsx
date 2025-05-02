@@ -93,6 +93,13 @@ export default function Dashboard() {
                                 <Badge radius="full" color="red">Expert</Badge> <p> - </p>
                                 <Badge radius="full" color="yellow">Master</Badge>   
                             </div>
+
+                            <div className="grid grid-rows justify-center items-center gap-2 mt-4 bg-black/20 rounded-lg p-4 shadow-md">
+                            <h1>Our Beginning!</h1>
+                                <div>
+                                    <JourneyCard title="Universe Explained" />
+                                </div>
+                            </div>
                     </div>
 
                     {/* Trending */}
