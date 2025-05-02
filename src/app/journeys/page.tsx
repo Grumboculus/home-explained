@@ -27,11 +27,12 @@ const JourneyCard = ({ title, time, img, link, difficulty, difficultyColor }) =>
   
         {/* Text Section */}
         <div className="bg-gradient-to-br from-[#232323] to-[#00000] bg-[#0c0c12] text-white p-3">
-          <h3 className="text-lg font-semibold truncate hover:underline">{title}
-            <a 
-              href={link} 
-            />
-          </h3>
+          
+          <Link>
+            <h3 className="text-lg text-white font-semibold truncate hover:underline">{title}
+            </h3>
+          </Link>
+    
           <p className="text-sm">{time}🕝</p>
           <Badge radius="full" color={difficultyColor}>{difficulty}</Badge>
         </div>
@@ -97,7 +98,7 @@ export default function Dashboard() {
                             <div className="grid grid-rows justify-center items-center gap-2 mt-4 bg-black/20 rounded-lg p-4 shadow-md">
                             <h1 className="text-3xl font-bold">Our Beginning!</h1>
                                 <div>
-                                    <JourneyCard title="Universe Explained" time="24H" img="/Universe1.jpg" difficulty="Starter" difficultyColor="green" />
+                                    <JourneyCard title="Universe Explained" link="/journeys/j0" time="24H" img="/Universe1.jpg" difficulty="Starter" difficultyColor="green" />
                                 </div>
                             </div>
                     </div>
