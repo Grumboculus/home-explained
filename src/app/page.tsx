@@ -13,18 +13,31 @@ export default function HeroSection() {
         <p className="max-w-xl text-gray-300 mb-8">
           Teaching the future generations about the world we live in, one step at a time.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 jusify-center">
+          
           <Link href="/signin">
             <Button variant="outline" size="3" radius="large">
               Sign In
             </Button>
           </Link>
+
           <Link href="/signup">
             <Button color="blue" radius="large" size="3">
               Getting Started
             </Button>
           </Link>
         </div>
+
+        <div className="p-4">
+          <p className="text-gray-600 font-bold text-sm p-2">PLEASE USE THIS WHEN IN PRE-ALPHA</p>
+          <Link href="/dashboard">
+            <Button className="" color="blue" variant="soft" radius="large" size="3">
+              Guest Mode
+            </Button>
+          </Link>
+        </div>
+        
+
       </section>
     </div>
   );

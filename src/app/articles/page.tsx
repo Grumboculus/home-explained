@@ -77,9 +77,9 @@ export default function Articles() {
 
                     {/* Title and Description */}
                     <div className="text-center my-6 mx-4">
-                        <h1 className="text-4xl font-bold mb-2">Discover New Journeys</h1>
+                        <h1 className="text-4xl font-bold mb-2">Articles</h1>
                         <p className="text-gray-200 max-w-2xl mx-auto">
-                            Explore pathways that help you build skills, unlock opportunities, and achieve your dreams.
+                            Read Articles and checkout recent things that have happened!
                         </p>
 
                     </div>
@@ -88,7 +88,7 @@ export default function Articles() {
                     <div className="flex flex-col gap-4 mx-4 my-4 p-4 bg-black/20 fade-in-up rounded-lg shadow-md">
                         <h2 className="text-2xl font-semibold">Trending</h2>
                         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-                            <JourneyCard title="Trump Traiffs" readTime="6M" img="/Journeys/WebDevPlace.jpg" timeSince="2 Weeks" />
+                            <JourneyCard title="The Universe’s Brightest Lights Have Some Dark Origins" readTime="3M" link="/articles/a1" img="/Journeys/WebDevPlace.jpg" timeSince="NASA" />
                             <JourneyCard title="Elon Musk is bad >:(" readTime="4M" img="/Journeys/CreativeDesign.png" difficulty="Learning" difficultyColor="orange" />
                             <JourneyCard title="Illuminate Wormhole" readTime="2M" img="/Journeys/Business.jpg" difficulty="Starter" difficultyColor="green" />
                             <JourneyCard title="Photography Essential" time="1.5M" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />

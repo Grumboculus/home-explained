@@ -81,7 +81,7 @@ export default function Videos() {
                     <div className="text-center my-6 mx-4">
                         <h1 className="text-4xl font-bold mb-2">Videos</h1>
                         <p className="text-gray-200 max-w-2xl mx-auto">
-                            Check out educational videos made by ouur creators!
+                            Check out educational videos made by our favorite creators! (Placeholders)
                         </p>
 
                     </div>
@@ -93,9 +93,9 @@ export default function Videos() {
                             <JourneyCard title=" 12 VS Code Extensions to INCREASE Productivity 2024 " watchTime="27:12" img="/Videos/VSCode.jpg" link="/videos/v1" Creator="Devression" />
                             <JourneyCard title="Coding is easy, actually" watchTime="9:47" img="/Videos/CodingEasy.jpg" link="/videos/v2" Creator="easy, actually" />
                             <JourneyCard title="i created malware with Python (it's SCARY easy!!)" watchTime="25:17" img="/Videos/Malware.jpg" link="/videos/v3" Creator="NetworkChuck" />
-                            <JourneyCard title="Photography Essential" time="1.5M" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Marketing Crash Course" time="3H" img="/Journeys/Stonks.png" difficulty="Learning" difficultyColor="orange"/>
-                            <JourneyCard title="Writing" time="12H" img="/Journeys/Writing.jpg" difficulty="Starter" difficultyColor="green"/>
+                            <JourneyCard title=" 12 VS Code Extensions to INCREASE Productivity 2024 " watchTime="27:12" img="/Videos/VSCode.jpg" link="/videos/v1" Creator="Devression" />
+                            <JourneyCard title="Coding is easy, actually" watchTime="9:47" img="/Videos/CodingEasy.jpg" link="/videos/v2" Creator="easy, actually" />
+                            <JourneyCard title="i created malware with Python (it's SCARY easy!!)" watchTime="25:17" img="/Videos/Malware.jpg" link="/videos/v3" Creator="NetworkChuck" />
                         </div>
 
                         <div className="flex justify-end items-end">
@@ -103,24 +103,6 @@ export default function Videos() {
                         </div>  
 
                     </div>
-
-                    {/* Recommended */}
-                    <div className="flex flex-col gap-4 mx-4 my-4 p-4 bg-black/20 fade-in-up rounded-lg shadow-md">
-                        <h2 className="text-2xl font-semibold">Recommended</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-                            <JourneyCard title="Art Fundamentals" time="1H" img="/Journeys/Art.png" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Public Speaking | Tone" time="30M" img="/Journeys/PublicSpeaking.png" difficulty="Expert" difficultyColor="red" />
-                            <JourneyCard title="Animation Basics" time="5H" img="/Journeys/Animation.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Marketing Crash Course" time="3H" img="/Journeys/Stonks.png" difficulty="Learning" difficultyColor="orange" />
-                            <JourneyCard title="Photography Essentials" time="1.5H" img="/Journeys/Photography.jpg" difficulty="Starter" difficultyColor="green" />
-                            <JourneyCard title="Writing" time="12H" img="/Journeys/Writing.jpg" difficulty="Starter" difficultyColor="green"/>
-                        </div>
-
-                        <div className="flex justify-end items-end">
-                        </div> 
-                        
-                    </div>
-
                 </div>
             </div>
         </div>
