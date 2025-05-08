@@ -112,31 +112,32 @@ export default function Dashboard() {
                         </div>
 
                         <div className="flex flex-col items-center gap-4 w-full mt-6"> 
-  <Badge size="3" radius="full" color="green">Starter</Badge>
-  <p className="rounded-2xl font-bold text-white text-lg">Start out here!</p>
-
-  <div className="flex flex-col items-center gap-8 w-full mt-6">
+                          <Badge size="3" radius="full" color="green">Starter</Badge>
+                          <p className="rounded-2xl font-bold text-white text-lg">Start out here!</p>
+  
+                          <div className="flex flex-col items-center gap-8 w-full mt-6">
     
-    {/* Video Card Section */}
-    <div className="flex justify-center items-center gap-4 flex-wrap">
-      <h1 className="text-2xl font-black text-white border border-gray-600 px-4 py-4 rounded-full">1</h1>
-      <Separator size="2" color="blue" orientation="vertical" />
-      <VideoCard title="Intro to the Universe" img="/Universe1.jpg" link="#" />
-    </div>
+                            {/* Video Card Section */}
+                            <div className="flex justify-center items-center gap-4 flex-wrap">
+                              <h1 className="text-2xl font-black text-white border border-gray-600 px-4 py-4 rounded-full">1</h1>
+                              <Separator size="2" color="blue" orientation="vertical" />
+                              <VideoCard title="Intro to the Universe" img="/Universe1.jpg" link="#" />
+                            </div>
 
-    <Separator size="3" color="blue" orientation="horizontal" className="w-full max-w-sm" />
+                            <Separator size="3" color="blue" orientation="vertical" className="w-full max-w-sm" />
 
-    {/* Article Card Section */}
-    <div className="flex justify-center items-center gap-4 flex-wrap">
-      <h1 className="text-2xl font-black text-white border border-gray-600 px-4 py-4 rounded-full">2</h1>
-      <Separator size="2" color="blue" orientation="vertical" />
-      <div className="flex justify-center w-full sm:w-auto">
-        <ArticleCard title="Intro to the Universe" img="/Universe1.jpg" link="#" />
-      </div>
-    </div>
+                            {/* Article Card Section */}
+                            <div className="flex justify-center items-center gap-4 flex-wrap">
+                              <h1 className="text-2xl font-black text-white border border-gray-600 px-4 py-4 rounded-full">2</h1>
+                              <Separator size="2" color="blue" orientation="vertical" />
+                              <div className="flex justify-center w-full sm:w-auto">
+                                <ArticleCard title="Intro to the Universe" img="/Universe1.jpg" link="#" />
+                              </div>
+                            </div>
 
-  </div>
-</div>
+                          </div>
+
+                        </div>
 
                         </div>
                             

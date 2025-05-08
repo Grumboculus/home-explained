@@ -13,8 +13,9 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 const JourneyCard = ({ title, time, img, link, difficulty, difficultyColor }) => {
     return (
-      
+
       <div className="hover:cursor-pointer bg-white/10 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-gray-700">
+        <Link href={link}>
         {/* Image Section */}
         <div className="h-26">
           {/* Replace with your real image */}
@@ -36,6 +37,7 @@ const JourneyCard = ({ title, time, img, link, difficulty, difficultyColor }) =>
           <p className="text-sm">{time}🕝</p>
           <Badge radius="full" color={difficultyColor}>{difficulty}</Badge>
         </div>
+        </Link>
       </div>
     );
   };
@@ -97,6 +99,7 @@ export default function Dashboard() {
 
                             <div className="grid grid-rows justify-center items-center gap-2 mt-4 bg-black/20 rounded-lg p-4 shadow-md">
                             <h1 className="text-3xl font-bold">Our Beginning!</h1>
+                            <p className="text-xs text-gray-300"> Check out where we started! We didn't start out as all skills, it was originally just going to be space info! </p>
                                 <div>
                                     <JourneyCard title="Universe Explained" link="/journeys/j0" time="24H" img="/Universe1.jpg" difficulty="Starter" difficultyColor="green" />
                                 </div>
